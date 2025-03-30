@@ -13,6 +13,13 @@ document.getElementById("plusLeftBtn").addEventListener("click", () => {
     document.getElementById("leftPoints").textContent = leftPoints;
 })
 
+
+document.getElementById("leftPoints").addEventListener("click", () => {
+    leftPoints++;
+    document.getElementById("leftPoints").textContent = leftPoints;
+})
+
+
 document.getElementById("minusRightBtn").addEventListener("click", () => {
     if(rightPoints > 0) {
         rightPoints--;
@@ -21,6 +28,10 @@ document.getElementById("minusRightBtn").addEventListener("click", () => {
 })
 
 document.getElementById("plusRightBtn").addEventListener("click", () => {
+    rightPoints++;
+    document.getElementById("rightPoints").textContent = rightPoints;
+})
+document.getElementById("rightPoints").addEventListener("click", () => {
     rightPoints++;
     document.getElementById("rightPoints").textContent = rightPoints;
 })

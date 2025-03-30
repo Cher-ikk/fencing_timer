@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#121212;
+}
+
+/*TIMER*/
+#timer {
+    font-size: 6rem;
+    font-weight: normal;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+
+    width: 100%;
+    height: 20%;
+    line-height: 100px;
+
+    border-radius: 5px;
+    background-color:#222;
+    margin-bottom: 5px;
+}
+
+/*CARDS*/
+.cardBtn-container {
+    display: flex; 
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.cardBtn {
+    padding: 20px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+#yellowCardLeftBtn, #yellowCardRightBtn {
+    background-color: gold;
+}
+#redCardLeftBtn, #redCardRightBtn {
+    background-color: crimson;
+}
+#blackCardLeftBtn, #blackCardRightBtn {
+    background-color: black;
+}
+
+#resetCardsBtn {
+    width: auto;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: #222;
+    color: darkgray;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/*SCORE*/
+.scoreBtn-container {
+    display: flex; 
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.scoreBtn {
+    cursor: pointer;
+    border: none;
+    background-color: #222;
+}
+
+#minusLeftBtn, #minusRightBtn {
+    width: 60px;
+    height: 60px;
+    color: crimson;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#plusLeftBtn, #plusRightBtn {
+    width: 60px;
+    height: 60px;
+    color: limegreen;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#resetPointsBtn {
+    font-size: 14px;
+    width: auto;
+    padding: 0 10px;
+    cursor: pointer;
+    color: darkgray;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Points box */
+#points {
+    font-size: 6rem;
+    font-weight: normal;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 20%;
+
+    border-radius: 5px;
+    background-color:#222;
+    margin-bottom: 5px;
+}
+
+/*START/STOP*/
+#toggleTimerBtn {
+    width: 100%;
+    height: 15%;
+    letter-spacing: 3px;
+
+    border-radius: 5px;
+    background-color: limegreen;
+    color: #fff;
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+/*OTHER*/
+.otherBtn-container {
+    display: flex; 
+    justify-content: center;
+    gap: 3px;
+}
+
+#threeMinBtn, #oneMinBtn, #twoMinBtn, #priorityBtn, #togglePassivityBtn {
+    font-size: 14px;
+    width: auto;
+    padding: 10px 12px;
+    background-color: #222;
+    color: darkgrey;
+    cursor: pointer;
+    border: none;
+
+}
