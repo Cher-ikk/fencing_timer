@@ -6,7 +6,27 @@ document.getElementById("3minBtn").addEventListener("click", () => {
     var minutes = Math.floor(totalTime / 60);
     var seconds = Math.floor(totalTime % 60);
     document.getElementById('timer').textContent =
-        String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0');
+        String(minutes) + ":" + String(seconds).padStart(2, '0');
+
+    return totalTime;
+})
+
+document.getElementById("1minBtn").addEventListener("click", () => {
+    totalTime = 60;
+    var minutes = Math.floor(totalTime / 60);
+    var seconds = Math.floor(totalTime % 60);
+    document.getElementById('timer').textContent =
+        String(minutes) + ":" + String(seconds).padStart(2, '0');
+
+    return totalTime;
+})
+
+document.getElementById("2minBtn").addEventListener("click", () => {
+    totalTime = 120;
+    var minutes = Math.floor(totalTime / 60);
+    var seconds = Math.floor(totalTime % 60);
+    document.getElementById('timer').textContent =
+        String(minutes) + ":" + String(seconds).padStart(2, '0');
 
     return totalTime;
 })
@@ -36,15 +56,5 @@ function updateTimerDisplay() {
     var minutes = Math.floor(totalTime / 60);
     var seconds = totalTime % 60;
     document.getElementById("timer").textContent =
-        String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0');
+        String(minutes) + ":" + String(seconds).padStart(2, '0');
 }
-
-/*function togglePassivity() {
-    var PassivityButton = document.getElementById("togglePassivityBtn");
-    
-    if () {
-        PassivityButton.innerText = "Passivity: ON";
-    } else {
-        PassivityButton.innerText = "Passivity: OFF";
-    }
-}*/
