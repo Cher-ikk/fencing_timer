@@ -1,7 +1,7 @@
 var totalTime = 180;
-var timeInterval;
+var timeInterval = null;
 
-document.getElementById("set3MinBtn").addEventListener("click", () => {
+document.getElementById("3minBtn").addEventListener("click", () => {
     totalTime = 180;
     var minutes = Math.floor(totalTime / 60);
     var seconds = Math.floor(totalTime % 60);
@@ -13,6 +13,7 @@ document.getElementById("set3MinBtn").addEventListener("click", () => {
 
 document.getElementById("toggleTimerBtn").addEventListener("click", () => {
     if(!timeInterval) {
+        //Start the timer
         timeInterval = setInterval(() => {
             if(totalTime > 0) {
                 totalTime--;
@@ -22,29 +23,20 @@ document.getElementById("toggleTimerBtn").addEventListener("click", () => {
                 timeInterval = null;
             }
         }, 1000);
+        document.getElementById("toggleTimerBtn").textContent = "Pause";
     } else {
-        clearInterval(timeInterval);
+        // Pause the timer
+        clearInterval(timeInterval)
         timeInterval = null;
-    }
+        document.getElementById("toggleTimerBtn").textContent = "Start";
+    } 
 });
 
 function updateTimerDisplay() {
-    var minutes = Math.floor(time / 60);
-    var seconds = time % 60;
+    var minutes = Math.floor(totalTime / 60);
+    var seconds = totalTime % 60;
     document.getElementById("timer").textContent =
         String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0');
-}
-
-function toggleTimerBtn() {
-    var StartButton = document.getElementById("toggleTimerBtn");
-    
-    if (!running) {
-        startTimer();
-        StartButton.innerText = "Pause";
-    } else {
-        pauseTimer();
-        StartButton.innerText = "Start";
-    }
 }
 
 /*function togglePassivity() {
