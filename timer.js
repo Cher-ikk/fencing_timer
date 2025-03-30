@@ -31,10 +31,11 @@ document.getElementById("twoMinBtn").addEventListener("click", () => {
     return totalTime;
 })
 
+window.navigator = window.navigator || {};
 document.getElementById("toggleTimerBtn").addEventListener("click", () => {
     if(!timeInterval) {
         //Start the timer
-        document.getElementById("toggleTimerBtn").style.backgroundColour = 'crimson'; //1
+        document.getElementById("toggleTimerBtn").style.backgroundColor = 'crimson';
         timeInterval = setInterval(() => {
             if(totalTime > 0) {
                 totalTime--;
@@ -42,12 +43,13 @@ document.getElementById("toggleTimerBtn").addEventListener("click", () => {
             } else {
                 clearInterval(timeInterval);
                 timeInterval = null;
+                navigator.vibrate(300)
             }
         }, 1000);
         document.getElementById("toggleTimerBtn").textContent = "Pause";
     } else {
         // Pause the timer
-        document.getElementById("toggleTimerBtn").style.backgroundColour = 'limegreen'; //1
+        document.getElementById("toggleTimerBtn").style.backgroundColor = 'limegreen';
         clearInterval(timeInterval)
         timeInterval = null;
         document.getElementById("toggleTimerBtn").textContent = "Start";
