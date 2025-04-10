@@ -257,7 +257,7 @@ body {
     background-color: #171717;
     cursor: not-allowed;
 }
-.otherBtn:hover, .otherBtn:active {
+.otherBtn:hover {
     background-color: darkgray;
     color: #222;
 }
