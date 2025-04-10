@@ -79,7 +79,7 @@ body {
     margin-right: 5px;
     font-size: 14px;
 }
-#resetCardsBtn:hover, #resetCardsBtn:active {
+#resetCardsBtn:active {
     background-color: darkgray;
     color: #222;
 }
@@ -120,11 +120,11 @@ body {
     align-items: center;
     text-align:center;
 }
-#plusLeftBtn:active, #plusRightBtn:active, #plusLeftBtn:hover, #plusRightBtn:hover{
+#plusLeftBtn:active, #plusRightBtn:active {
     color: #222;
     background-color: limegreen;
 }
-#minusLeftBtn:active, #minusRightBtn:active, #minusLeftBtn:hover, #minusRightBtn:hover{
+#minusLeftBtn:active, #minusRightBtn:active {
     color: #222;
     background-color: crimson;
 }
@@ -137,7 +137,7 @@ body {
     margin-right: 5px;
     margin-left: 5px;
 }
-#resetPointsBtn:hover, #resetPointsBtn:active {
+#resetPointsBtn:active {
     background-color: darkgray;
     color: #222;
 }
@@ -257,7 +257,7 @@ body {
     background-color: #171717;
     cursor: not-allowed;
 }
-.otherBtn:hover {
+.otherBtn:active {
     background-color: darkgray;
     color: #222;
 }
