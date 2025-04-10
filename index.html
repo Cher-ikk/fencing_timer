@@ -9,7 +9,10 @@
 <body>
     <div id="fullscreenCard"></div>
 
-    <div id="timer">3 : 00</div>
+    <diV id="timer-container">
+        <div id="timerPassivity">1 : 00</div>
+        <div id="timer">3 : 00</div>
+    </diV>
 
     <div class="cardBtn-container">
         <button class="cardBtn" id="yellowCardLeftBtn"></button>
@@ -50,16 +53,20 @@
     <button id="toggleTimerBtn">Start</button>
 
     <div class="otherBtn-container">
-        <button id="threeMinBtn">3 min</button>
-        <button id="oneMinBtn">1 min</button>
-        <button id="twoMinBtn">2 min</button>
+        <button class="otherBtn" id="threeMinBtn">3 min</button>
+        <button class="otherBtn" id="oneMinBtn">1 min</button>
+        <button class="otherBtn" id="twoMinBtn">2 min</button>
 
-        <button id="priorityBtn">Priority</button>
-        <button id="togglePassivityBtn">Passivity: ON</button>
+        <button class="otherBtn" id="priorityBtn">Priority</button>
+        <button disabled class="otherBtn disabled" id="togglePassivityBtn">Passivity: OFF</button>
     </div>
-    
+
+    <script>
+        var passivityState = false;
+    </script>
     <script src="timer.js"></script>
     <script src="points.js"></script>
     <script src="cards.js"></script>
+    <script src="passivity.js"></script>
 </body>
 </html>

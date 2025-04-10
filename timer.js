@@ -45,14 +45,18 @@ document.getElementById("toggleTimerBtn").addEventListener("click", () => {
         }, 10); // Update every 10ms for better accuracy
         document.getElementById("toggleTimerBtn").textContent = "Pause";
     } else {
-        // Pause the timer
-        totalTime = remainingTime; // Save the remaining time
-        clearInterval(timeInterval);
-        timeInterval = null;
-        document.getElementById("toggleTimerBtn").textContent = "Start";
-        document.getElementById("toggleTimerBtn").style.backgroundColor = 'limegreen';
+        pauseTimer();
     }
 });
+
+
+function pauseTimer() {
+    totalTime = remainingTime; // Save the remaining time
+    clearInterval(timeInterval);
+    timeInterval = null;
+    document.getElementById("toggleTimerBtn").textContent = "Start";
+    document.getElementById("toggleTimerBtn").style.backgroundColor = 'limegreen';
+}
 
 function updateTimerDisplay() {
     const minutes = Math.floor(remainingTime / 60000);
