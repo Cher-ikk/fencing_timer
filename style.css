@@ -260,4 +260,5 @@ body {
 .otherBtn:active {
     background-color: darkgray;
     color: #222;
+    transition: 0.2s;
 }
