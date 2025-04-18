@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fencing Timer – interactive fencing timer web application with score and penalty counters. Perfect for training and competitions">
     <title>Fencing Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,7 +11,6 @@
     <div id="fullscreenCard"></div>
 
     <diV id="timer-container">
-        <div id="timerPassivity">1 : 00</div>
         <div id="timer">3 : 00</div>
     </diV>
 
@@ -58,15 +58,12 @@
         <button class="otherBtn" id="twoMinBtn">2 min</button>
 
         <button class="otherBtn" id="priorityBtn">Priority</button>
-        <button disabled class="otherBtn disabled" id="togglePassivityBtn">Passivity: OFF</button>
     </div>
 
     <script>
-        var passivityState = false;
     </script>
     <script src="timer.js"></script>
     <script src="points.js"></script>
     <script src="cards.js"></script>
-    <script src="passivity.js"></script>
 </body>
 </html>

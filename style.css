@@ -34,15 +34,6 @@ body {
     align-items: center;
     text-align:center;
 }
-#timerPassivity {
-    position: absolute;
-    font-size: 1rem;
-    font-weight: normal;
-    color:#222;
-    display: flex;
-    justify-content: center;
-    top: -20px;
-}
 
 /*CARDS*/
 .cardBtn-container {
