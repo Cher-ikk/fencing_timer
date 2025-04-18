@@ -70,9 +70,10 @@ body {
     margin-right: 5px;
     font-size: 14px;
 }
-#resetCardsBtn:active {
+#resetCardsBtn:hover {
     background-color: darkgray;
     color: #222;
+    transition: 1s;
 }
 
 /*SCORE*/
@@ -111,13 +112,15 @@ body {
     align-items: center;
     text-align:center;
 }
-#plusLeftBtn:active, #plusRightBtn:active {
+#plusLeftBtn:hover, #plusRightBtn:hover {
     color: #222;
     background-color: limegreen;
+    transition: 1s;
 }
-#minusLeftBtn:active, #minusRightBtn:active {
+#minusLeftBtn:hover, #minusRightBtn:hover {
     color: #222;
     background-color: crimson;
+    transition: 1s;
 }
 #resetPointsBtn {
     font-size: 14px;
@@ -128,9 +131,10 @@ body {
     margin-right: 5px;
     margin-left: 5px;
 }
-#resetPointsBtn:active {
+#resetPointsBtn:hover {
     background-color: darkgray;
     color: #222;
+    transition: 1s;
 }
 /* Points box */
 #points {
@@ -248,8 +252,8 @@ body {
     background-color: #171717;
     cursor: not-allowed;
 }
-.otherBtn:active {
+.otherBtn:hover {
     background-color: darkgray;
     color: #222;
-    transition: 1.5s;
+    transition: 1s;
 }
